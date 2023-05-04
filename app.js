@@ -11,7 +11,7 @@ app.use('/accounts',AccountsRoute);
 
 
 // DB CONNECTION
-mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://ExternalAPI:KVfwNTenVtGIWoUC@cluster0.klr51lu.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true })
   .then(() => {
     console.log('Connected to DB..!');
   })
